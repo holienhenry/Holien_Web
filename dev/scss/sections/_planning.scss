@@ -1,0 +1,12 @@
+/* =============
+    Planning
+============= */
+#planning{
+
+    @include xl{
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". planning-container .";
+    }
+    
+}

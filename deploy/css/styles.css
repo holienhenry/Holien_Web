@@ -386,6 +386,75 @@ textarea {
 /* =============
     Header
 ============= */
+#header {
+  padding: 16px;
+}
+
 /* =============
     Footer
 ============= */
+#footer {
+  padding: 16px;
+}
+
+/* =============
+    Hero 2
+============= */
+#hero-2 {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". hero-2 .";
+}
+@media (min-width: 1200px) {
+  #hero-2 {
+    grid-template-columns: auto 1200px auto;
+  }
+}
+#hero-2 img {
+  grid-area: hero-2;
+  width: 100%;
+}
+
+/* =============
+    Hero 
+============= */
+#hero img {
+  width: 100%;
+}
+#hero div {
+  grid-template-columns: auto;
+}
+
+/* =============
+    New
+============= */
+#new {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". new .";
+}
+
+/* =============
+    Planning
+============= */
+@media (min-width: 1200px) {
+  #planning {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". planning-container .";
+  }
+}
+
+/* =============
+    Search
+============= */
+#search {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". search .";
+}
+@media (min-width: 1200px) {
+  #search {
+    grid-template-columns: auto 1200px auto;
+  }
+}
